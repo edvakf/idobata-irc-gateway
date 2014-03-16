@@ -4,3 +4,4 @@ node_modules
 vendor/bundle
 .ruby-version
 Gemfile.lock
+.env
