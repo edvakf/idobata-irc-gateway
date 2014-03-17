@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-Net::IRC::Server.new('localhost', ENV['IIG_PORT'] || 6667, IdobataIrcGateway, {
+Net::IRC::Server.new(ENV['IIG_LISTEN_HOST'] || 'localhost', ENV['IIG_PORT'] || 6667, IdobataIrcGateway, {
   redis: {
     host: '127.0.0.1',
     port: 6379,
